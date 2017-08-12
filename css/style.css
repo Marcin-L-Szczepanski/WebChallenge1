@@ -1,0 +1,189 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: darkorange;
+}
+
+.container {
+    margin: 0 150px 0 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media all and (min-width: 1200px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
+    margin-top: 55px;
+    opacity: .5;
+}
+
+.banner__logo {
+    margin-right: 24px;
+}
+
+.form__header {
+    text-align: center;
+    font-size: 32px;
+    color: #ffffff;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, .7);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+} 
+
+.form__container {
+    width: 400px;
+    border: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.form__background {
+    width: 422px;
+    background-color: rgba(0, 0, 0, .23);
+    border-radius: 5px;
+    padding: 20px 20px 22px 18px;
+    margin: 0;
+}
+
+.form__body {
+    width: 386px;
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, .13);
+    
+}
+
+.form__field-wrapper {
+    width: 341px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 20px;
+    padding: 1px;  
+    background: linear-gradient(#F6F6F6, #F0F0F0);
+}
+.form__field-wrapper:hover {
+    background: linear-gradient(to top, #F6F6F6, #F0F0F0);
+}
+}
+    .form__field-wrapper--checkbox {
+        border: none;
+        
+    }
+    .form__field-wrapper--checkbox-small {
+        width: 151px;
+    }
+    .form__field-wrapper--inline {
+        border: none;
+        justify-content: space-between;
+    }
+    .form__field-wrapper--inline:hover, .form__field-wrapper--checkbox:hover {
+            background-color: transparent;
+        }
+
+.field__label {
+    height: 34px;
+    width: 58px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-right: 1px solid #e4e4e4;
+    position: relative;    
+    cursor: pointer;
+}
+
+.label__icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+    .label__icon--username {
+        background-image: url("../img/icons/username.png");
+        height: 22px;
+        width: 23px;
+        margin-top: -11px;
+        margin-left: -12px;
+    }
+    .label__icon--padlock {
+        background-image: url("../img/icons/padlock.png");
+        height: 26px;
+        width: 21px;
+        margin-top: -13px;        
+        margin-left: -10px;
+    }
+    .label__icon--email {
+        background-image: url("../img/icons/email.png");
+        height: 16px;
+        width: 24px;
+        margin-top: -8px;        
+        margin-left: -12px;
+    }
+
+    .label__icon--location {
+        background-image: url("../img/icons/location.png");
+        height: 24px;
+        width: 15px;
+        margin-top: -12px;        
+        margin-left: -7px;
+    }
+    .label__icon--phone {
+        background-image: url("../img/icons/phone.png");
+        height: 25px;
+        width: 15px;
+        margin-top: -12px;        
+        margin-left: -7px;
+    }
+
+
+.label__text{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+.field__input {
+    border: none;
+    width: 100%;
+    padding-left: 69px;
+    background-color: transparent;
+    font-size: 16px;
+    margin: 0;
+    margin-left: -59px;
+}
+.field__input:focus, field__input:active {
+    background: linear-gradient(to top, #f2f2f2, #eaeaea);
+}
+    .field__input--textarea {
+        height: 232px;
+        padding-top: 15px;
+        padding-left: 16px;
+        margin-left: 0px;
+    }
+
+.form__button {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
