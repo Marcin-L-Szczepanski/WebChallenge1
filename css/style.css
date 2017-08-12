@@ -33,6 +33,18 @@ body {
 .banner__logo {
     margin-right: 24px;
 }
+.banner--bottom .banner__logo {
+    width: 75px;
+    height: 74px;
+}
+.banner--bottom .banner__name {
+    width: 263px;
+    height: 70px;
+}
+
+.banner__url {
+    margin: 0 auto 0 auto;
+}
 
 .form__header {
     text-align: center;
