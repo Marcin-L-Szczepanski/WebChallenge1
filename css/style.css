@@ -2,36 +2,51 @@
     box-sizing: border-box;
 }
 
+html {
+    background-image: url('../img/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 body {
     font-family: 'Titillium Web', sans-serif;
-    background-color: darkorange;
+    background-image: url('../img/background1.png'), url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    margin: 0 150px 0 150px;
+    margin: 0 15% 0 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-@media all and (min-width: 1200px) {
-    .container {
-        flex-direction: row;
-    }
 }
 
 .column {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 70px;
 }
 
 .banner {
-    margin-top: 55px;
+    display: block;
+    text-align: center;
+    padding-top: 76px;
     opacity: .5;
 }
 
 .banner__logo {
     margin-right: 24px;
+}
+
+.banner--bottom {
+    width: 384px;
+    margin: 58px auto 0 auto;
 }
 .banner--bottom .banner__logo {
     width: 75px;
@@ -43,8 +58,10 @@ body {
 }
 
 .banner__url {
-    margin: 0 auto 0 auto;
+    display: block;
+    margin: 34px auto 0 auto;
 }
+
 
 .form__header {
     text-align: center;
@@ -56,9 +73,9 @@ body {
 } 
 
 .form__container {
-    width: 400px;
     border: none;
     padding: 0;
+    margin: 0;
     margin-top: 30px;
 }
 
@@ -68,6 +85,7 @@ body {
     border-radius: 5px;
     padding: 20px 20px 22px 18px;
     margin: 0;
+    transition: transform 300ms ease-out;
 }
 
 .form__body {
@@ -198,4 +216,46 @@ body {
 .form__button {
     margin-top: 10px;
     margin-bottom: 25px;
+}
+
+
+
+@media all and (min-width: 1300px) {
+    .container {
+        flex-direction: row;
+    }
+    body {
+        background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+}
+}
+
+@media all and (max-width: 500px) {
+    .container { 
+        transform: scale(.9);
+        transition: transform 300ms ease-out;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .container { 
+        transform: scale(.8);
+        transition: transform 300ms ease-out;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .container { 
+        transform: scale(.7);
+        transition: transform 300ms ease-out;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .container { 
+        transform: scale(.6);
+        transition: transform 300ms ease-out;
+    }
 }
