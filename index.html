@@ -37,21 +37,44 @@
                                         <input class="field__input" type="text" name="name" id="name" placeholder="Your Name">
                                     </div>
                                     <div class="form__field-wrapper">
-                                        <label class="field__label"  for="email">
-                                            <span class="label__icon label__icon--email"></span>
-                                            <span class="label__text">Your Email</span>
+                                        <label class="field__label"  for="password">
+                                            <span class="label__icon label__icon--padlock"></span>
+                                            <span class="label__text">Password</span>
                                         </label>
-                                        <input class="field__input" type="email" name="email" id="email" placeholder="Your Email">
+                                        <input class="field__input" type="password" name="password" id="password" placeholder="Password">
                                     </div>
                                     <div class="form__field-wrapper">
-                                        <textarea class="field__input field__input--textarea" name="message" placeholder="Type your message..."></textarea>
+                                        <label class="field__label"  for="confirm-password">
+                                            <span class="label__icon label__icon--padlock"></span>
+                                            <span class="label__text">Confirm Password</span>
+                                        </label>
+                                        <input class="field__input" type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password">
+                                    </div>
+                                    <div class="form__field-wrapper">
+                                        <label class="field__label"  for="email">
+                                            <span class="label__icon label__icon--email"></span>
+                                            <span class="label__text">Email</span>
+                                        </label>
+                                        <input class="field__input" type="email" name="email" id="email" placeholder="Email">
+                                    </div>
+                                    <div class="form__field-wrapper">
+                                        <label class="field__label"  for="email">
+                                            <span class="label__icon label__icon--location"></span>
+                                            <span class="label__text">Email</span>
+                                        </label>
+                                        <select class="field__input" type="email" name="email" id="email" placeholder="Email">
+                                            <option>One</option>
+                                            <option>Two</option>
+                                            <option>Three</option>
+                                            <option>Four</option>
+                                        </select>
                                     </div>
                                     <div class="form__field-wrapper form__field-wrapper--checkbox">
                                         <input type="checkbox" name="email-copy" id="email-copy">
-                                        <label for="email-copy">Send a copy to my Email</label>
+                                        <label for="email-copy">I have read and accept the terms of use</label>
                                     </div>
-                                    <div class="form__field-wrapper">
-                                        <input class="form__button button" type="submit" value="Send Email">
+                                    <div class="form__field-wrapper form__field-wrapper--button">
+                                        <input class="form__button button" type="submit" value="Sign In">
                                     </div>
                                 </div>
                                 </div>
@@ -86,7 +109,7 @@
                                         <input type="checkbox" name="email-copy" id="email-copy">
                                         <label for="email-copy">Send a copy to my Email</label>
                                     </div>
-                                    <div>
+                                    <div class="form__field-wrapper form__field-wrapper--button">
                                         <input class="form__button button" type="submit" value="Send Email">
                                     </div>
                                 </div>

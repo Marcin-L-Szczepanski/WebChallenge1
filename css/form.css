@@ -51,13 +51,15 @@
 .form__field-wrapper:hover {
     background: linear-gradient(to top, #F6F6F6, #F0F0F0);
 }
-}
     .form__field-wrapper--checkbox {
         border: none;
-        
+    }
+    .form__field-wrapper--button {
+        border: none;
     }
     .form__field-wrapper--checkbox-small {
         width: 151px;
+        border: none;
     }
     .form__field-wrapper--inline {
         border: none;
@@ -136,10 +138,11 @@
 .field__input {
     border: none;
     width: 100%;
-    padding-left: 20px;
+    padding-left: 70px;
     background-color: transparent;
     font-size: 16px;
     margin: 0;
+    margin-left: -58px;
 }
 .field__input:focus, field__input:active {
     background: linear-gradient(to top, #f2f2f2, #eaeaea);
