@@ -54,7 +54,8 @@ body {
 }
 
 .banner--bottom {
-    width: 384px;
+    width: 100%;
+    max-width: 384px;
     margin: 58px auto 0 auto;
 }
 .banner--bottom .banner__logo {
