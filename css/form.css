@@ -173,7 +173,8 @@
     width: 16px;
     height: 16px;
     border-radius: 5px;
-    background-color: #88C814;
+    background: linear-gradient(to top, #7EC31F, #A4D842);
+    background-color: #93D02B;
     opacity: 0;
     top: 4px;
     left: 4px;
