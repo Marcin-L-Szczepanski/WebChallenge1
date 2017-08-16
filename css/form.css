@@ -154,6 +154,43 @@
         margin-left: 0px;
     }
 
+.field__checkbox {
+    display: none;
+}
+
+.field__checkbox-box {
+    width: 26px;
+    height: 26px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    position: relative;
+    display: inline-block;
+}
+
+.field__checkbox-box:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    background-color: #88C814;
+    opacity: 0;
+    top: 4px;
+    left: 4px;
+    position: absolute;
+    transition: opacity 300ms ease-out;
+}
+
+.field__label--checkbox {
+    cursor: pointer;
+}
+
+.field__checkbox:checked + .field__label--checkbox > .field__checkbox-box:before  {
+    opacity: 1;
+    transition: opacity 300ms ease-out;
+}
+
+
 .form__button {
     margin-top: 10px;
     margin-bottom: 25px;
