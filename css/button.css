@@ -10,21 +10,17 @@
     border: 1px solid #3a9a00;
     text-shadow: 1px 1px #51850e;
     box-shadow: inset 2px 1px 1px 0px rgba(255, 255, 255, .4);
-    opacity: 0.9;
+    cursor: pointer;
 }
 
-.button:hover {
-    opacity: 1;
-}
-.button:focus, .button:active {
-    opacity: 1;
+.button:hover, .button:focus {
     background: linear-gradient(#7EC31F, #A4D842);
-    background-color: #93D02B;
 }
 
-@keyframes flash {
-    0% { opacity: .6 }
-    100% { opacity: 1 }
+.button:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
 }
 
 .button--small {
@@ -38,10 +34,7 @@
     background: linear-gradient(#F65E6F, #F03747);
     border-color: #a2202a;
 }
-    .button--decline:hover {
-        opacity: 1;
-    }
-    .button--decline:active, .button--decline:focus {
+    .button--decline:hover, .button--decline:active {
         background: linear-gradient(to top, #F65E6F, #F03747);
     }
 
@@ -51,6 +44,6 @@
     border-color: #90ca6d;
 }
     .button--disabled:hover {
-        opacity: .9;
+        background: linear-gradient(#C9E2AA, #ABD182);
         cursor: not-allowed;
     }
