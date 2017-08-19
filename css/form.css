@@ -15,7 +15,6 @@
 }
 
 
-
 .form__header {
     text-align: center;
     font-size: 32px;
@@ -86,11 +85,6 @@
         border: none;
         background: #f4f4f4;
     }
-    
-.field__span {
-    margin-left: 14px;
-    color: #afafaf;
-}
 
 .field__label {
     height: 34px;
@@ -146,7 +140,14 @@
     }
 
 
-.label__text{
+.label__text--visually-hidden { 
+/* --- Visually hidden copied from HTML5 Boilerplate: 
+    * Hide only visually, but have it available for screen readers:
+    * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+    *
+    * 1. For long content, line feeds are not interpreted as spaces and small width
+    *    causes content to wrap 1 word per line:
+    *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe --- */
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -225,6 +226,11 @@
 .field__checkbox:checked + .field__label--checkbox > .field__checkbox-box:before  {
     opacity: 1;
     transition: opacity 300ms ease-out;
+}
+    
+.field__span {
+    margin-left: 14px;
+    color: #afafaf;
 }
 
 
