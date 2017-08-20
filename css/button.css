@@ -26,10 +26,12 @@
 .button--small {
     width: 151px;
     height: 44px;
+    font-size: 18px;
     display: inline-block;
 }
 .button--decline {
     background-color: #F4495B;
+    text-shadow: 1px 1px #2a4707;
     background: linear-gradient(#F65E6F, #F03747);
     border-color: #a2202a;
 }
