@@ -34,7 +34,7 @@
     padding-bottom: 5px;
     margin-bottom: 20px;
 } 
-    /* --- Centering legend for Firefox --- */
+/* --- Centering legend for Firefox --- */
     @-moz-document url-prefix() {
       .form__header {
         position: relative;
