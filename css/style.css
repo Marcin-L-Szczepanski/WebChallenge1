@@ -29,7 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     transition: transform 300ms ease-out;
 }
 
@@ -57,6 +57,7 @@ body {
     width: 100%;
     max-width: 384px;
     margin: 58px auto 0 auto;
+    padding-top: 0;
 }
 .banner--bottom .banner__logo {
     width: 75px;
