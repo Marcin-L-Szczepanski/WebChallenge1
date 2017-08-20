@@ -76,11 +76,21 @@ body {
 }
 
 
+<<<<<<< HEAD
+=======
+@media all and (min-width: 394px) {
+    .banner--bottom .banner__logo {
+        margin-bottom: 0;
+}
+}
+
+>>>>>>> b58c585af86bc85d43c56d7e3387b6f3cdc3ba66
 @media all and (min-width: 449px) {
     .banner__logo {
         margin-bottom: 0;
         margin-left: 0;
         margin-right: 24px;
+<<<<<<< HEAD
 }
        .banner--bottom .banner__name {
         margin-left: 0;
@@ -91,6 +101,8 @@ body {
 @media all and (min-width: 394px) {
     .banner--bottom .banner__logo {
         margin-bottom: 0;
+=======
+>>>>>>> b58c585af86bc85d43c56d7e3387b6f3cdc3ba66
 }
 }
 
