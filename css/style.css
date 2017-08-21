@@ -30,7 +30,6 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    transition: transform 300ms ease-out;
 }
 
 .column {
