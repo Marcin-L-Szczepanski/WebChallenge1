@@ -1,0 +1,13 @@
+.banner__logo {
+    margin-right: 12px;
+    margin-bottom: 24px;
+    margin-left: 12px;
+}
+
+@media all and (min-width: 449px) {
+    .banner__logo {
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 24px;
+    }
+}

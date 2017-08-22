@@ -14,6 +14,7 @@ body {
 
 .container {
     max-width: 1050px;
+    padding-top: 76px;
     padding-bottom: 100px;
     margin: 0 auto 0 auto;
     background-image: url('../img/background1.png'), url('../img/background.png');
@@ -38,64 +39,6 @@ body {
     position: relative;
     flex-direction: column;
     justify-content: center;
-}
-
-.banner {
-    display: block;
-    text-align: center;
-    padding-top: 76px;
-    opacity: .4;
-}
-
-.banner__logo {
-    margin-bottom: 24px;
-    margin-right: 12px;
-    margin-left: 12px;
-}
-
-.banner--bottom {
-    width: 100%;
-    max-width: 384px;
-    margin: 58px auto 0 auto;
-    padding-top: 0;
-}
-.banner--bottom .banner__logo {
-    width: 75px;
-    height: 74px;
-}
-.banner--bottom .banner__name {
-    width: 263px;
-    height: 70px;
-    margin-left: 12px;
-}
-
-.banner__url {
-    display: block;
-    margin: 34px auto 0 auto;
-}
-
-@media all and (min-width: 394px) {
-    .banner--bottom .banner__logo {
-        margin-bottom: 0;
-}
-}
-
-@media all and (min-width: 449px) {
-    .banner__logo {
-        margin-bottom: 0;
-        margin-left: 0;
-        margin-right: 24px;
-}
-       .banner--bottom .banner__name {
-        margin-left: 0;
-}
-}
-
-
-@media all and (min-width: 394px) {
-    .banner--bottom .banner__logo {
-        margin-bottom: 0;
-}
 }
 
 @media all and (min-width: 950px) {
