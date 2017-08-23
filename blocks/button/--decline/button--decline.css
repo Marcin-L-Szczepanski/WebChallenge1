@@ -1,9 +1,0 @@
-.button--decline {
-    background-color: #F4495B;
-    text-shadow: 1px 1px #2a4707;
-    background: linear-gradient(#F65E6F, #F03747);
-    border-color: #a2202a;
-}
-    .button--decline:hover, .button--decline:focus {
-        background: linear-gradient(to top, #F65E6F, #F03747);
-    }
