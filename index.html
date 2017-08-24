@@ -7,12 +7,6 @@
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-    <!-- Banner Block -->
-        <link rel="stylesheet" href="blocks/banner/banner.css">
-        <link rel="stylesheet" href="blocks/banner/__logo/banner__logo.css">
-        <link rel="stylesheet" href="blocks/banner/--bottom/banner--bottom.css">
-        
-        
         <link rel="stylesheet" href="css/form.css">
 
     </head>
@@ -61,13 +55,13 @@
                                         </label>
                                         <input class="field__input" type="email" name="register-email" id="register-email" placeholder="Email" required>
                                     </div>
-                                    <div class="form__field-wrapper">
+                                    <div class="form__field-wrapper form__field-wrapper--select">
                                         <label class="field__label"  for="register-location">
                                             <span class="label__icon label__icon--location"></span>
-                                            <span class="label__text--visually-hidden">Email</span>
+                                            <span class="label__text--visually-hidden">Location</span>
                                         </label>
-                                        <select class="field__input" name="register-location" id="register-location" required>
-                                            <option  value="" disabled selected hidden>Location</option>
+                                        <select class="field__input field__input--select" name="register-location" id="register-location" required>
+                                            <option  value="" disabled selected hidden>Your  Location</option>
                                             <option value="africa">Africa</option>
                                             <option value="asia">Asia</option>
                                             <option value="australia">Australia</option>
@@ -209,7 +203,7 @@
                                     <div class="form__field-wrapper form__field-wrapper--inline">
                                         <input class="form__button button button--small" type="submit" value="Subscribe">
                                     
-                                        <input class="form__button button button--small button--decline" type="submit" value="No, Thanks">
+                                        <input class="form__button button button--small button--decline" type="button" value="No, Thanks">
                                     </div>
                                 </div>
                                 </div>
