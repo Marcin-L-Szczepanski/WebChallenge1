@@ -60,6 +60,26 @@ body {
   opacity: .4;
 }
 
+/* ------------------------ Banner Elements ------------------------ */
+.banner__logo {
+  margin-right: 12px;
+  margin-bottom: 24px;
+  margin-left: 12px;
+}
+
+@media all and (min-width: 449px) {
+  .banner__logo {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 24px;
+  }
+}
+.banner__url {
+  display: block;
+  margin: 34px auto 0 auto;
+}
+
+/* ------------------------ Banner Modifiers ------------------------ */
 .banner--bottom {
   max-width: 384px;
   margin: 58px auto 0 auto;
@@ -92,24 +112,6 @@ body {
     margin-bottom: 0;
   }
 }
-.banner__logo {
-  margin-right: 12px;
-  margin-bottom: 24px;
-  margin-left: 12px;
-}
-
-@media all and (min-width: 449px) {
-  .banner__logo {
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 24px;
-  }
-}
-.banner__url {
-  display: block;
-  margin: 34px auto 0 auto;
-}
-
 /* ------------------------ Form Block ------------------------ */
 /* --- style placeholder --- */
 ::-webkit-input-placeholder {
