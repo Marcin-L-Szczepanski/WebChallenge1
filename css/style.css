@@ -136,48 +136,10 @@ body {
   opacity: 1;
 }
 
-.form__container {
-  width: 100%;
-  min-width: 300px;
-  max-width: 422px;
-  border: none;
-  padding: 0;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.form__field-wrapper {
-  width: 90%;
-  border: 1px solid #c6c6c6;
-  border-radius: 5px;
-  display: flex;
-  margin-top: 20px;
-  padding: 1px;
-  background: linear-gradient(#F6F6F6, #F0F0F0);
-  position: relative;
-}
-
 .field__input--select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-.form__field-wrapper--select::before {
-  content: "";
-  position: absolute;
-  top: 16px;
-  right: 15px;
-  width: 10px;
-  height: 10px;
-  border-top: 10px solid #DEDEDE;
-  border-right: 10px solid transparent;
-  border-left: 10px solid transparent;
-}
-
-.form__field-wrapper:hover {
-  background: linear-gradient(to top, #F6F6F6, #F0F0F0);
 }
 
 .form__field-wrapper--checkbox-small {
@@ -377,6 +339,25 @@ body {
   margin-bottom: 25px;
 }
 
+.form__container {
+  width: 100%;
+  min-width: 300px;
+  max-width: 422px;
+  border: none;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__field-wrapper {
+  width: 90%;
+  display: flex;
+  margin-top: 20px;
+  padding: 1px;
+  position: relative;
+}
+
 .form__header {
   margin: 0 auto 0 auto;
   font-size: 32px;
@@ -433,6 +414,49 @@ body {
 
 .form__field-wrapper--checkbox-small .checkbox__input {
   transform: translate(2px, 10px);
+}
+
+/* ------------------------ Form Elements ------------------------ */
+.form__container {
+  width: 100%;
+  min-width: 300px;
+  max-width: 422px;
+  border: none;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__field-wrapper {
+  width: 90%;
+  display: flex;
+  margin-top: 20px;
+  padding: 1px;
+  position: relative;
+}
+
+/* ------------------------ Form Elements Modifiers--------------------- */
+.form__field-wrapper--border {
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+  background: linear-gradient(#F6F6F6, #F0F0F0);
+}
+
+.form__field-wrapper--border:hover {
+  background: linear-gradient(to top, #F6F6F6, #F0F0F0);
+}
+
+.form__field-wrapper--select-arrow::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  width: 10px;
+  height: 10px;
+  border-top: 10px solid #DEDEDE;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
 }
 
 /* ------------------------ Button Block ------------------------ */
