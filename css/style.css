@@ -136,12 +136,6 @@ body {
   opacity: 1;
 }
 
-.field__input--select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
 .form__field-wrapper--checkbox-small {
   width: 151px;
   height: 44px;
@@ -152,15 +146,6 @@ body {
 .form__field-wrapper--inline {
   border: none;
   justify-content: space-between;
-  background: #f4f4f4;
-}
-
-.form__field-wrapper--checkbox,
-.form__field-wrapper--button,
-.form__field-wrapper--inline:hover,
-.form__field-wrapper--checkbox:hover,
-.form__field-wrapper--button:hover {
-  border: none;
   background: #f4f4f4;
 }
 
@@ -180,6 +165,12 @@ body {
   border-right: 1px solid #e4e4e4;
   position: relative;
   cursor: pointer;
+}
+
+.field__input--select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .label__icon {
