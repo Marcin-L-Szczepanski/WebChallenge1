@@ -1,0 +1,7 @@
+/* --- Turn-off-number-input-spinners - solution from:
+    https://css-tricks.com/snippets/css/turn-off-number-input-spinners/ --- */
+.field__input--number::-webkit-inner-spin-button, 
+.field__input--number::-webkit-outer-spin-button {
+  -webkit-appearance: none; 
+  margin: 0; 
+}

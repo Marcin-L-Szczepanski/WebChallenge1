@@ -1,0 +1,105 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-image: url('img/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1050px;
+    padding-top: 76px;
+    padding-bottom: 100px;
+    margin: 0 auto 0 auto;
+    background-image: url('img/background1.png'), url('img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media all and (min-width: 950px) {
+    .content-wrapper {
+        flex-direction: row;
+    }
+    .container {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        box-shadow: 0px 0px 100px;
+}
+}
+
+
+
+/* ------------------------ Banner Block ------------------------ */
+@import "blocks/banner/banner.scss";
+/* ------------------------ Banner Elements ------------------------ */
+    @import "blocks/banner/__logo/banner__logo.scss";
+    @import "blocks/banner/__url/banner__url.scss";
+/* ------------------------ Banner Modifiers ------------------------ */
+    @import "blocks/banner/--bottom/banner--bottom.scss";
+
+
+
+/* ------------------------ Form Block ------------------------ */
+@import "blocks/form/form.scss";
+/* ------------------------ Form Elements ------------------------ */
+    @import "blocks/form/__container/form__container.scss";
+    @import "blocks/form/__header/form__header.scss";
+    @import "blocks/form/__background/form__background.scss";
+    @import "blocks/form/__body/form__body.scss";
+
+    @import "blocks/form/__field-wrapper/form__field-wrapper.scss";
+        @import "blocks/form/__field-wrapper/--border/form__field-wrapper--border.scss";
+        @import "blocks/form/__field-wrapper/--select-arrow/form__field-wrapper--select-arrow.scss";
+        @import "blocks/form/__field-wrapper/--inline/form__field-wrapper--inline.scss";
+
+        @import "blocks/form/__field-wrapper/__input/field__input.scss";
+            @import "blocks/form/__field-wrapper/__input/--select/field__input--select.scss";
+            @import "blocks/form/__field-wrapper/__input/--textarea/field__input--textarea.scss";
+            @import "blocks/form/__field-wrapper/__input/--number/field__input--number.scss";
+
+        @import "blocks/form/__field-wrapper/__label/field__label.scss";
+            @import "blocks/form/__field-wrapper/__label/__text--visually-hidden/label__text--visually-hidden.scss";
+            @import "blocks/form/__field-wrapper/__label/__icon/label__icon.scss";
+            @import "blocks/form/__field-wrapper/__label/__icon/*/*";
+
+
+    @import "blocks/form/__button/form__button.scss";
+/* ------------------------ Form Elements Modifiers--------------------- */
+
+    
+
+
+/* ------------------------ Button Block ------------------------ */
+@import "blocks/button/button.scss";
+    /* ---------------------- Button Modifiers ---------------------- */
+    @import "blocks/button/--small/button--small.scss";
+    @import "blocks/button/--disabled/button--disabled.scss";
+    @import "blocks/button/--decline/button--decline.scss";
+
