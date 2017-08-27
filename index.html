@@ -5,8 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="static/style.css">
 
     </head>
 
@@ -69,9 +68,12 @@
                                             <option value="s-america">South America</option>
                                         </select>
                                     </div>
-                                    <div class="form__field-wrapper form__field-wrapper--checkbox">
-                                        <input class="checkbox__input" type="checkbox" required name="register-agree-terms" id="register-agree-terms">
-                                        <label class="field__label--checkbox" for="register-agree-terms"><div class="field__checkbox-box"></div><span class="checkbox__label-text">I have read and accept the terms of use</span></label>
+                                    <div class="form__field-wrapper">
+                                        <input class="field__input--checkbox" type="checkbox" required name="register-agree-terms" id="register-agree-terms">
+                                        <label class="field__label--checkbox" for="register-agree-terms">
+                                            <div class="label__checkbox"></div>
+                                            <span class="label__text">I have read and accept the terms of use</span>
+                                        </label>
                                     </div>
                                     <div class="form__field-wrapper form__field-wrapper--button">
                                         <input class="form__button button" type="submit" value="Sign In">
@@ -105,9 +107,12 @@
                                     <div class="form__field-wrapper form__field-wrapper--border">
                                         <textarea required class="field__input field__input--textarea" name="send-msg-content" placeholder="Type your message..."></textarea>
                                     </div>
-                                    <div class="form__field-wrapper form__field-wrapper--checkbox">
-                                        <input class="checkbox__input" type="checkbox" name="send-email-copy" id="send-email-copy">
-                                        <label class="field__label--checkbox" for="send-email-copy"><div class="field__checkbox-box"></div><span class="checkbox__label-text">Send a copy to my Email</span></label>
+                                    <div class="form__field-wrapper">
+                                        <input class="field__input--checkbox" type="checkbox" name="send-email-copy" id="send-email-copy">
+                                        <label class="field__label--checkbox" for="send-email-copy">   
+                                            <div class="label__checkbox"></div>
+                                            <span class="label__text">Send a copy to my Email</span>
+                                        </label>
                                     </div>
                                     <div class="form__field-wrapper form__field-wrapper--button">
                                         <input class="form__button button" type="submit" value="Send Email">
@@ -142,10 +147,13 @@
                                         <input class="field__input" type="password" name="sign-in-password" id="sign-in-password" placeholder="Password" required>
                                     </div>
                                     <div class="form__field-wrapper form__field-wrapper--inline">
-                                        <div class="form__field-wrapper form__field-wrapper--checkbox form__field-wrapper--checkbox-small">
-                                        <input class="checkbox__input" type="checkbox" required name="sign-in-remember" id="sign-in-remember">
-                                        <label class="field__label--checkbox" for="sign-in-remember"><div class="field__checkbox-box"></div><span class="checkbox__label-text">Remember me</span></label>
-                                    </div>
+                                        <div class="form__field-wrapper--checkbox-small">
+                                            <input class="field__input--checkbox" type="checkbox" required name="sign-in-remember" id="sign-in-remember">
+                                            <label class="field__label--checkbox field__label--small" for="sign-in-remember">
+                                                <div class="label__checkbox"></div>
+                                                <span class="label__text">Remember me</span>
+                                        </label>
+                                        </div>
                                     <input class="form__button button button--small" type="submit" value="Sign In">
                                     </div>
                                 </div>
