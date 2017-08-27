@@ -1,0 +1,44 @@
+.field__input--checkbox {
+/* --- Visually hidden focusable copied from HTML5 Boilerplate: 
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe --- */
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+    white-space: inherit;
+    transform: translate(2px, 2px);
+    opacity: 0;
+}
+
+.field__input--checkbox:focus {
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+    clip: auto;
+    height: 12px;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+    box-shadow: 4px 5px 4px 9px rgba(126,195,31,.5);
+    background-color: red;
+    transform: translate(2px, 2px);
+    opacity: 1;
+}
+
+.form__field-wrapper--checkbox-small .field__input--checkbox {
+    transform: translate(3px, 10px);
+}
+
+.form__field-wrapper--checkbox-small .field__label--checkbox {
+    margin-top: -12px;
+}
