@@ -1,232 +1,228 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Masteralb Creative | Form</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-        <link rel="stylesheet" href="static/style.css">
 
-    </head>
+<head>
+  <title>Masteralb Creative | Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
+</head>
 
-    <body>    
-        <div class="container">
-            <header>
-                <div class="banner">
-                    <img class="banner__logo" src="img/logo-pic.png" alt="">
-                    <img class="banner__name" src="img/logo-name.png" alt="masteralb creative">
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <img class="banner__logo" src="img/logo-pic.png" alt="">
+        <img class="banner__name" src="img/logo-name.png" alt="masteralb creative">
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <div class="column">
+        <section>
+          <form method="post" action="#" autocomplete="off" class="form">
+            <fieldset class="form__container">
+              <legend class="form__header">Register Form</legend>
+              <div class="form__background">
+                <div class="form__body">
+                  <div class="form__field-wrapper form__field-wrapper--border">
+                    <label class="field__label" for="register-name">
+                        <span class="label__icon label__icon--username"></span>
+                        <span class="label__text--visually-hidden">Your Name</span>
+                    </label>
+                    <input class="field__input" type="text" name="register-name" id="register-name" placeholder="Your Name" required>
+                  </div>
+                  <div class="form__field-wrapper form__field-wrapper--border">
+                    <label class="field__label" for="register-password">
+                        <span class="label__icon label__icon--padlock"></span>
+                        <span class="label__text--visually-hidden">Password</span>
+                    </label>
+                    <input class="field__input" type="password" name="register-password" id="register-password" placeholder="Password" required>
+                  </div>
+                  <div class="form__field-wrapper form__field-wrapper--border">
+                    <label class="field__label" for="register-confirm-password">
+                        <span class="label__icon label__icon--padlock"></span>
+                        <span class="label__text--visually-hidden">Confirm Password</span>
+                    </label>
+                    <input class="field__input" type="password" name="register-confirm-password" id="register-confirm-password" placeholder="Confirm Password" required>
+                  </div>
+                  <div class="form__field-wrapper form__field-wrapper--border">
+                    <label class="field__label" for="register-email">
+                        <span class="label__icon label__icon--email"></span>
+                        <span class="label__text--visually-hidden">Email</span>
+                    </label>
+                    <input class="field__input" type="email" name="register-email" id="register-email" placeholder="Email" required>
+                  </div>
+                  <div class="form__field-wrapper form__field-wrapper--border form__field-wrapper--select-arrow">
+                    <label class="field__label" for="register-location">
+                        <span class="label__icon label__icon--location"></span>
+                        <span class="label__text--visually-hidden">Location</span>
+                    </label>
+                    <select class="field__input field__input--select" name="register-location" id="register-location" required>
+                        <option  value="" disabled selected hidden>Your  Location</option>
+                        <option value="africa">Africa</option>
+                        <option value="asia">Asia</option>
+                        <option value="australia">Australia</option>
+                        <option value="europe">Europe</option>
+                        <option value="n-america">North America</option>
+                        <option value="s-america">South America</option>
+                    </select>
+                  </div>
+                  <div class="form__field-wrapper">
+                    <input class="field__input--checkbox" type="checkbox" required name="register-agree-terms" id="register-agree-terms">
+                    <label class="field__label--checkbox" for="register-agree-terms">
+                        <div class="label__checkbox"></div>
+                        <span class="label__text">I have read and accept the terms of use</span>
+                    </label>
+                  </div>
+                  <div class="form__field-wrapper form__field-wrapper--button">
+                    <input class="form__button button" type="submit" value="Sign In">
+                  </div>
                 </div>
-            </header>
-            <div class="content-wrapper">
-                <div class="column">
-                    <section>
-                        <form method="post" action="#" autocomplete="off" class="form">
-                            <fieldset class="form__container">
-                                <legend class="form__header">Register Form</legend>
-                                <div class="form__background">
-                                <div class="form__body">
-                                    <div class="form__field-wrapper form__field-wrapper--border">
-                                        <label class="field__label"  for="register-name">
-                                            <span class="label__icon label__icon--username"></span>
-                                            <span class="label__text--visually-hidden">Your Name</span>
-                                        </label>
-                                        <input class="field__input" type="text" name="register-name" id="register-name" placeholder="Your Name" required>
-                                    </div>
-                                    <div class="form__field-wrapper form__field-wrapper--border">
-                                        <label class="field__label"  for="register-password">
-                                            <span class="label__icon label__icon--padlock"></span>
-                                            <span class="label__text--visually-hidden">Password</span>
-                                        </label>
-                                        <input class="field__input" type="password" name="register-password" id="register-password" placeholder="Password" required>
-                                    </div>
-                                    <div class="form__field-wrapper form__field-wrapper--border">
-                                        <label class="field__label"  for="register-confirm-password">
-                                            <span class="label__icon label__icon--padlock"></span>
-                                            <span class="label__text--visually-hidden">Confirm Password</span>
-                                        </label>
-                                        <input class="field__input" type="password" name="register-confirm-password" id="register-confirm-password" placeholder="Confirm Password" required>
-                                    </div>
-                                    <div class="form__field-wrapper form__field-wrapper--border">
-                                        <label class="field__label"  for="register-email">
-                                            <span class="label__icon label__icon--email"></span>
-                                            <span class="label__text--visually-hidden">Email</span>
-                                        </label>
-                                        <input class="field__input" type="email" name="register-email" id="register-email" placeholder="Email" required>
-                                    </div>
-                                    <div class="form__field-wrapper form__field-wrapper--border form__field-wrapper--select-arrow">
-                                        <label class="field__label"  for="register-location">
-                                            <span class="label__icon label__icon--location"></span>
-                                            <span class="label__text--visually-hidden">Location</span>
-                                        </label>
-                                        <select class="field__input field__input--select" name="register-location" id="register-location" required>
-                                            <option  value="" disabled selected hidden>Your  Location</option>
-                                            <option value="africa">Africa</option>
-                                            <option value="asia">Asia</option>
-                                            <option value="australia">Australia</option>
-                                            <option value="europe">Europe</option>
-                                            <option value="n-america">North America</option>
-                                            <option value="s-america">South America</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__field-wrapper">
-                                        <input class="field__input--checkbox" type="checkbox" required name="register-agree-terms" id="register-agree-terms">
-                                        <label class="field__label--checkbox" for="register-agree-terms">
-                                            <div class="label__checkbox"></div>
-                                            <span class="label__text">I have read and accept the terms of use</span>
-                                        </label>
-                                    </div>
-                                    <div class="form__field-wrapper form__field-wrapper--button">
-                                        <input class="form__button button" type="submit" value="Sign In">
-                                    </div>
-                                </div>
-                                </div>
-                            </fieldset>
-                          </form>
-                    </section>
-                    
-                    <section>
-                        <form method="post" action="#" autocomplete="off" class="form">
-                            <fieldset class="form__container">
-                                <legend class="form__header">Send Email</legend>
-                                <div class="form__background">
-                                <div class="form__body">
-                                    <div class="form__field-wrapper form__field-wrapper--border">
-                                        <label class="field__label"  for="send-msg-name">
-                                            <span class="label__icon label__icon--username"></span>
-                                            <span class="label__text--visually-hidden">Your Name</span>
-                                        </label>
-                                        <input class="field__input" type="text" name="send-msg-name" id="send-msg-name" placeholder="Your Name" required>
-                                    </div>
-                                    <div class="form__field-wrapper form__field-wrapper--border">
-                                        <label class="field__label"  for="send-email-address">
-                                            <span class="label__icon label__icon--email"></span>
-                                            <span class="label__text--visually-hidden">Your Email</span>
-                                        </label>
-                                        <input class="field__input" type="email" name="send-email-address" id="send-email-address" placeholder="Your Email" required>
-                                    </div>
-                                    <div class="form__field-wrapper form__field-wrapper--border">
-                                        <textarea required class="field__input field__input--textarea" name="send-msg-content" placeholder="Type your message..."></textarea>
-                                    </div>
-                                    <div class="form__field-wrapper">
-                                        <input class="field__input--checkbox" type="checkbox" name="send-email-copy" id="send-email-copy">
-                                        <label class="field__label--checkbox" for="send-email-copy">   
-                                            <div class="label__checkbox"></div>
-                                            <span class="label__text">Send a copy to my Email</span>
-                                        </label>
-                                    </div>
-                                    <div class="form__field-wrapper form__field-wrapper--button">
-                                        <input class="form__button button" type="submit" value="Send Email">
-                                    </div>
-                                </div>
-                                </div>
-                            </fieldset>
-                          </form>
-                    </section>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+
+        <section>
+          <form method="post" action="#" autocomplete="off" class="form">
+            <fieldset class="form__container">
+              <legend class="form__header">Send Email</legend>
+              <div class="form__background">
+                <div class="form__body">
+                  <div class="form__field-wrapper form__field-wrapper--border">
+                    <label class="field__label" for="send-msg-name">
+                        <span class="label__icon label__icon--username"></span>
+                        <span class="label__text--visually-hidden">Your Name</span>
+                    </label>
+                    <input class="field__input" type="text" name="send-msg-name" id="send-msg-name" placeholder="Your Name" required>
+                  </div>
+                  <div class="form__field-wrapper form__field-wrapper--border">
+                    <label class="field__label" for="send-email-address">
+                        <span class="label__icon label__icon--email"></span>
+                        <span class="label__text--visually-hidden">Your Email</span>
+                    </label>
+                    <input class="field__input" type="email" name="send-email-address" id="send-email-address" placeholder="Your Email" required>
+                  </div>
+                  <div class="form__field-wrapper form__field-wrapper--border">
+                    <textarea required class="field__input field__input--textarea" name="send-msg-content" placeholder="Type your message..."></textarea>
+                  </div>
+                  <div class="form__field-wrapper">
+                    <input class="field__input--checkbox" type="checkbox" name="send-email-copy" id="send-email-copy">
+                    <label class="field__label--checkbox" for="send-email-copy">   
+                        <div class="label__checkbox"></div>
+                        <span class="label__text">Send a copy to my Email</span>
+                    </label>
+                  </div>
+                  <div class="form__field-wrapper form__field-wrapper--button">
+                    <input class="form__button button" type="submit" value="Send Email">
+                  </div>
                 </div>
-                
-                
-                <div class="column">
-                    <section>
-                        <form method="post" action="#" autocomplete="off" class="form">
-                            <fieldset class="form__container">
-                                <legend class="form__header">Sign In Form</legend>
-                                <div class="form__background">
-                                <div class="form__body">
-                                    <div class="form__field-wrapper form__field-wrapper--border">
-                                        <label class="field__label"  for="sign-in-username">
-                                            <span class="label__icon label__icon--username"></span>
-                                            <span class="label__text--visually-hidden">Username</span>
-                                        </label>
-                                        <input class="field__input" type="text" name="sign-in-username" id="sign-in-username" placeholder="Username" required>
-                                    </div>
-                                    <div class="form__field-wrapper form__field-wrapper--border">
-                                        <label class="field__label"  for="sign-in-password">
-                                            <span class="label__icon label__icon--padlock"></span>
-                                            <span class="label__text--visually-hidden">Password</span>
-                                        </label>
-                                        <input class="field__input" type="password" name="sign-in-password" id="sign-in-password" placeholder="Password" required>
-                                    </div>
-                                    <div class="form__field-wrapper form__field-wrapper--inline">
-                                        <div class="form__field-wrapper--checkbox-small">
-                                            <input class="field__input--checkbox" type="checkbox" required name="sign-in-remember" id="sign-in-remember">
-                                            <label class="field__label--checkbox field__label--small" for="sign-in-remember">
-                                                <div class="label__checkbox"></div>
-                                                <span class="label__text">Remember me</span>
-                                        </label>
-                                        </div>
-                                    <input class="form__button button button--small" type="submit" value="Sign In">
-                                    </div>
-                                </div>
-                                </div>
-                            </fieldset>
-                          </form>
-                    </section>
-                    
-                    
-                    <section>
-                        <form method="post" action="#" autocomplete="off" class="form">
-                            <fieldset class="form__container">
-                                <legend class="form__header">Recover Form</legend>
-                                <div class="form__background">
-                                <div class="form__body">
-                                    <div class="form__field-wrapper form__field-wrapper--border">
-                                        <label class="field__label"  for="recover-email">
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+      <div class="column">
+        <section>
+          <form method="post" action="#" autocomplete="off" class="form">
+            <fieldset class="form__container">
+              <legend class="form__header">Sign In Form</legend>
+              <div class="form__background">
+                <div class="form__body">
+                  <div class="form__field-wrapper form__field-wrapper--border">
+                    <label class="field__label" for="sign-in-username">
+                        <span class="label__icon label__icon--username"></span>
+                        <span class="label__text--visually-hidden">Username</span>
+                    </label>
+                    <input class="field__input" type="text" name="sign-in-username" id="sign-in-username" placeholder="Username" required>
+                  </div>
+                  <div class="form__field-wrapper form__field-wrapper--border">
+                    <label class="field__label" for="sign-in-password">
+                        <span class="label__icon label__icon--padlock"></span>
+                        <span class="label__text--visually-hidden">Password</span>
+                    </label>
+                    <input class="field__input" type="password" name="sign-in-password" id="sign-in-password" placeholder="Password" required>
+                  </div>
+                  <div class="form__field-wrapper form__field-wrapper--inline">
+                    <div class="form__field-wrapper--checkbox-small">
+                      <input class="field__input--checkbox" type="checkbox" required name="sign-in-remember" id="sign-in-remember">
+                      <label class="field__label--checkbox field__label--small" for="sign-in-remember">
+                        <div class="label__checkbox"></div>
+                        <span class="label__text">Remember me</span>
+                        </label>
+                    </div>
+                    <input class="form__button button button--small" type="submit" value="Sign In">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+
+        <section>
+          <form method="post" action="#" autocomplete="off" class="form">
+            <fieldset class="form__container">
+              <legend class="form__header">Recover Form</legend>
+              <div class="form__background">
+                <div class="form__body">
+                  <div class="form__field-wrapper form__field-wrapper--border">
+                    <label class="field__label" for="recover-email">
                                             <span class="label__icon label__icon--email"></span>
                                             <span class="label__text--visually-hidden">Enter your Email</span>
                                         </label>
-                                        <input class="field__input" type="email" name="recover-email" id="recover-email" placeholder="Enter your Email" required>
-                                    </div>
-                                    <div class="form__field-wrapper form__field-wrapper--border">
-                                        <label class="field__label"  for="recover-phone">
+                    <input class="field__input" type="email" name="recover-email" id="recover-email" placeholder="Enter your Email" required>
+                  </div>
+                  <div class="form__field-wrapper form__field-wrapper--border">
+                    <label class="field__label" for="recover-phone">
                                             <span class="label__icon label__icon--phone"></span>
                                             <span class="label__text--visually-hidden">Enter your Phone Number</span>
                                         </label>
-                                        <input class="field__input field__input--number" type="number" name="recover-phone" id="recover-phone" placeholder="Enter your Phone Number">
-                                    </div>
-                                    <div class="form__field-wrapper form__field-wrapper--inline">
-                                        <input class="form__button button button--small" type="submit" value="Send">
-                                        <input class="form__button button button--small button--disabled" type="button" disabled value="Done">
-                                    </div>
-                                </div>
-                                </div>
-                            </fieldset>
-                          </form>
-                    </section>
-                    
-                    
-                    <section>
-                        <form method="post" action="#" autocomplete="off" class="form">
-                            <fieldset class="form__container">
-                                <legend class="form__header">Subscribe Form</legend>
-                                <div class="form__background">
-                                <div class="form__body">
-                                    <div class="form__field-wrapper form__field-wrapper--border">
-                                        <label class="field__label"  for="subscribe-email">
+                    <input class="field__input field__input--number" type="number" name="recover-phone" id="recover-phone" placeholder="Enter your Phone Number">
+                  </div>
+                  <div class="form__field-wrapper form__field-wrapper--inline">
+                    <input class="form__button button button--small" type="submit" value="Send">
+                    <input class="form__button button button--small button--disabled" type="button" disabled value="Done">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+
+        <section>
+          <form method="post" action="#" autocomplete="off" class="form">
+            <fieldset class="form__container">
+              <legend class="form__header">Subscribe Form</legend>
+              <div class="form__background">
+                <div class="form__body">
+                  <div class="form__field-wrapper form__field-wrapper--border">
+                    <label class="field__label" for="subscribe-email">
                                             <span class="label__icon label__icon--email"></span>
                                             <span class="label__text--visually-hidden">Your Email</span>
                                         </label>
-                                        <input class="field__input" type="text" name="subscribe-email" id="subscribe-email" placeholder="Enter your Email" required>
-                                    </div>
-                                    <div class="form__field-wrapper form__field-wrapper--inline">
-                                        <input class="form__button button button--small" type="submit" value="Subscribe">
-                                    
-                                        <input class="form__button button button--small button--decline" type="button" value="No, Thanks">
-                                    </div>
-                                </div>
-                                </div>
-                            </fieldset>
-                          </form>
-                    </section>
-            
-            <footer>
-                <div class="banner banner--bottom">
-                    <img class="banner__logo" src="img/logo-pic.png" alt="">
-                    <img class="banner__name" src="img/logo-name.png" alt="">
-                    <img class="banner__url" src="img/logo-url.png" alt="">
+                    <input class="field__input" type="text" name="subscribe-email" id="subscribe-email" placeholder="Enter your Email" required>
+                  </div>
+                  <div class="form__field-wrapper form__field-wrapper--inline">
+                    <input class="form__button button button--small" type="submit" value="Subscribe">
+
+                    <input class="form__button button button--small button--decline" type="button" value="No, Thanks">
+                  </div>
                 </div>
-            </footer>
               </div>
-            </div>            
-        </div>
-	</body>
+            </fieldset>
+          </form>
+        </section>
+
+        <footer>
+          <div class="banner banner--bottom">
+            <img class="banner__logo" src="img/logo-pic.png" alt="">
+            <img class="banner__name" src="img/logo-name.png" alt="">
+            <img class="banner__url" src="img/logo-url.png" alt="">
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
