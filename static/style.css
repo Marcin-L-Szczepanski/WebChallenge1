@@ -1,433 +1,57 @@
-@import url(../static/normalize.css);
-*, *::after, *::before {
-  box-sizing: border-box; }
+/*
+Error: File to import not found or unreadable: blocks/form/__field-wrapper/--select-arrow/form__field-wrapper--select-arrow.scss.
+       Load path: Sass::Globbing::Importer
+        on line 89 of src/style.scss
 
-body {
-  font-family: 'Titillium Web', sans-serif;
-  background-image: url("../img/background.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  padding: 0; }
+84: /* ###---Form__field-wrapper ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ *\/
+85:     @import "blocks/form/__field-wrapper/form__field-wrapper.scss";
+86: /* ###---Form__field-wrapper--border ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ *\/
+87:         @import "blocks/form/__field-wrapper/--border/form__field-wrapper--border.scss";
+88: /* ###---Form__field-wrapper--select-arrow ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ *\/
+89:         @import "blocks/form/__field-wrapper/--select-arrow/form__field-wrapper--select-arrow.scss";
+90:         @import "blocks/form/__field-wrapper/--inline/form__field-wrapper--inline.scss";
+91: 
+92:         @import "blocks/form/__field-wrapper/__input/field__input.scss";
+93:             @import "blocks/form/__field-wrapper/__input/--select/field__input--select.scss";
+94: /*blababla*\/
 
-.container {
-  max-width: 1050px;
-  padding-top: 76px;
-  padding-bottom: 100px;
-  margin: 0 auto 0 auto;
-  background-image: url("../img/background1.png"), url("../img/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
-
-.content-wrapper {
-  position: relative;
-  width: 100%;
-  margin: 0 auto 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start; }
-
-.column {
-  width: 100%;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: center; }
-
-@media all and (min-width: 950px) {
-  .content-wrapper {
-    flex-direction: row; }
-
-  .container {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    box-shadow: 0px 0px 100px; } }
-/*--- Normalize.css ----------------------------------------------------------------- */
-/* ### >>> Banner BLOCK <<< ######################################################### */
-.banner {
-  text-align: center;
-  opacity: .4; }
-
-/* ^^^ >>> Banner--bottom <<< ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-.banner--bottom {
-  max-width: 384px;
-  margin: 58px auto 0 auto;
-  padding-top: 0; }
-
-.banner--bottom .banner__logo {
-  width: 75px;
-  height: 74px; }
-
-.banner--bottom .banner__name {
-  width: 263px;
-  height: 70px;
-  margin-left: 12px; }
-
-@media all and (min-width: 394px) {
-  .banner--bottom .banner__logo {
-    margin-bottom: 0; } }
-@media all and (min-width: 449px) {
-  .banner--bottom .banner__name {
-    margin-left: 0; } }
-@media all and (min-width: 394px) {
-  .banner--bottom .banner__logo {
-    margin-bottom: 0; } }
-/* *** >>> Banner__logo <<< ****************************************************** */
-.banner__logo {
-  margin-right: 12px;
-  margin-bottom: 24px;
-  margin-left: 12px; }
-
-@media all and (min-width: 449px) {
-  .banner__logo {
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 24px; } }
-/* *** >>> Banner__url <<< ****************************************************** */
-.banner__url {
-  display: block;
-  margin: 34px auto 0 auto; }
-
-/* ###---Form---BLOCK---############################################################# */
-/* --- style placeholder --- */
-::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: #afafaf; }
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #afafaf;
-  opacity: 1; }
-
-:-ms-input-placeholder {
-  /* IE 10+ */
-  color: #afafaf; }
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: #afafaf;
-  opacity: 1; }
-
-/* ###---Form---ELEMENTS---########################################################### */
-/* ###---Form__container ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-.form__container {
-  width: 100%;
-  min-width: 300px;
-  max-width: 422px;
-  border: none;
-  padding: 0;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto; }
-
-/* ###---Form__header ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-.form__header {
-  margin: 0 auto 0 auto;
-  font-size: 32px;
-  color: #ffffff;
-  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.7);
-  padding-bottom: 5px;
-  margin-bottom: 20px; }
-
-/* --- Centering legend for Firefox --- */
-@-moz-document url-prefix() {
-  .form__header {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0); } }
-/* ###---Form__background ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-.form__background {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.23);
-  border-radius: 5px;
-  padding: 20px 20px 22px 18px;
-  margin: 0; }
-
-/* ###---Form__body ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-.form__body {
-  width: 100%;
-  border: none;
-  background-color: #f4f4f4;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.13); }
-
-/* ###---Form__field-wrapper ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-.form__field-wrapper {
-  width: 90%;
-  display: flex;
-  margin-top: 20px;
-  padding: 1px; }
-
-/* ###---Form__field-wrapper--border ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-.form__field-wrapper--border {
-  border: 1px solid #c6c6c6;
-  border-radius: 5px;
-  background: linear-gradient(#F6F6F6, #F0F0F0); }
-
-.form__field-wrapper--border:hover {
-  background: linear-gradient(to top, #F6F6F6, #F0F0F0); }
-
-/* ###---Form__field-wrapper--select-arrow ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-.form__field-wrapper--select-arrow {
-  background: url("../img/icons/arrow.png"), linear-gradient(#F6F6F6, #F0F0F0);
-  background-repeat: no-repeat;
-  background-position: center right 15px;
-  cursor: pointer; }
-
-.form__field-wrapper--select-arrow:hover {
-  background: url("../img/icons/arrow.png"), linear-gradient(to top, #F6F6F6, #F0F0F0);
-  background-repeat: no-repeat;
-  background-position: center right 15px; }
-
-.form__field-wrapper--inline {
-  border: none;
-  justify-content: space-between;
-  background: #f4f4f4; }
-
-.field__input {
-  border: none;
-  width: 100%;
-  padding-left: 70px;
-  background-color: transparent;
-  font-size: 16px;
-  margin: 0;
-  margin-left: -58px; }
-
-.field__input:focus {
-  background: linear-gradient(to top, #f2f2f2, #eaeaea);
-  box-shadow: 0px 0px 3px 3px rgba(126, 195, 31, 0.5); }
-
-.field__input--select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
-
-/*blababla*/
-.field__input--checkbox {
-  /* --- Visually hidden focusable copied from HTML5 Boilerplate: 
-  * Hide only visually, but have it available for screen readers:
-  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-  *
-  * 1. For long content, line feeds are not interpreted as spaces and small width
-  *    causes content to wrap 1 word per line:
-  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe --- */
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: hidden;
-  width: auto;
-  white-space: inherit;
-  transform: translate(2px, 2px);
-  opacity: 0; }
-
-.field__input--checkbox:focus {
-  /*
-  * Extends the .visuallyhidden class to allow the element
-  * to be focusable when navigated to via the keyboard:
-  * https://www.drupal.org/node/897638
-  */
-  clip: auto;
-  height: 12px;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-  white-space: inherit;
-  box-shadow: 4px 5px 4px 9px rgba(126, 195, 31, 0.5);
-  background-color: red;
-  transform: translate(2px, 2px);
-  opacity: 1; }
-
-.form__field-wrapper--checkbox-small .field__input--checkbox {
-  transform: translate(3px, 6px); }
-
-.form__field-wrapper--checkbox-small .field__label--checkbox {
-  margin-top: -12px; }
-
-.field__input--textarea {
-  height: 232px;
-  padding-top: 15px;
-  padding-left: 16px;
-  margin-left: 0px; }
-
-/* --- Turn-off-number-input-spinners - solution from:
-    https://css-tricks.com/snippets/css/turn-off-number-input-spinners/ --- */
-.field__input--number::-webkit-inner-spin-button,
-.field__input--number::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0; }
-
-.field__label {
-  height: 34px;
-  min-width: 58px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  border-right: 1px solid #e4e4e4;
-  position: relative;
-  cursor: pointer; }
-
-.field__label--checkbox {
-  cursor: pointer;
-  margin-left: -13px;
-  display: flex;
-  align-items: center; }
-
-.field__label--small {
-  margin-left: 0; }
-
-.label__text {
-  margin-left: 14px;
-  color: #afafaf; }
-
-.label__text--visually-hidden {
-  /* --- Visually hidden copied from HTML5 Boilerplate: 
-      * Hide only visually, but have it available for screen readers:
-      * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-      *
-      * 1. For long content, line feeds are not interpreted as spaces and small width
-      *    causes content to wrap 1 word per line:
-      *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe --- */
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
-  /* 1 */ }
-
-.label__icon {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%; }
-
-.label__icon--email {
-  background-image: url("../img/icons/email.png");
-  height: 16px;
-  width: 24px;
-  margin-top: -8px;
-  margin-left: -12px; }
-
-.label__icon--location {
-  background-image: url("../img/icons/location.png");
-  height: 24px;
-  width: 15px;
-  margin-top: -12px;
-  margin-left: -7px; }
-
-.label__icon--padlock {
-  background-image: url("../img/icons/padlock.png");
-  height: 26px;
-  width: 21px;
-  margin-top: -13px;
-  margin-left: -10px; }
-
-.label__icon--phone {
-  background-image: url("../img/icons/phone.png");
-  height: 25px;
-  width: 15px;
-  margin-top: -12px;
-  margin-left: -7px; }
-
-.label__icon--username {
-  background-image: url("../img/icons/username.png");
-  height: 22px;
-  width: 23px;
-  margin-top: -11px;
-  margin-left: -12px; }
-
-.label__checkbox {
-  width: 26px;
-  height: 26px;
-  border: 1px solid #c6c6c6;
-  border-radius: 5px;
-  background-color: #f4f4f4;
-  position: relative;
-  display: inline-block; }
-
-.label__checkbox:before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  border-radius: 5px;
-  background: linear-gradient(to top, #7EC31F, #A4D842);
-  background-color: #93D02B;
-  box-shadow: inset 2px 1px 1px 0px rgba(255, 255, 255, 0.4);
-  opacity: 0;
-  top: 4px;
-  left: 4px;
-  position: absolute;
-  transition: opacity 300ms ease-out; }
-
-.field__input--checkbox:checked + .field__label--checkbox > .label__checkbox:before {
-  opacity: 1; }
-
-.form__button {
-  margin-bottom: 25px; }
-
-/* ------------------------ Form Elements Modifiers--------------------- */
-/* ------------------------ Button Block ------------------------ */
-.button {
-  background: linear-gradient(to top, #7EC31F, #A4D842);
-  background-color: #93D02B;
-  color: #ffffff;
-  font-size: 24px;
-  width: 100%;
-  max-width: 342px;
-  height: 51px;
-  border-radius: 3px;
-  border: 1px solid #3a9a00;
-  text-shadow: 1px 1px #51850e;
-  box-shadow: inset 2px 1px 1px 0px rgba(255, 255, 255, 0.4);
-  cursor: pointer; }
-
-.button:hover, .button:focus {
-  background: linear-gradient(#7EC31F, #A4D842); }
-
-.button:active {
-  position: relative;
-  top: 1px;
-  left: 1px; }
-
-/* ---------------------- Button Modifiers ---------------------- */
-.button--small {
-  width: 151px;
-  height: 44px;
-  font-size: 18px;
-  display: inline-block; }
-
-.button--disabled {
-  background-color: #BCDB97;
-  background: linear-gradient(#C9E2AA, #ABD182);
-  border-color: #90ca6d; }
-
-.button--disabled:hover {
-  background: linear-gradient(#C9E2AA, #ABD182);
-  cursor: not-allowed; }
-
-.button--disabled:active {
-  position: static; }
-
-.button--decline {
-  background-color: #F4495B;
-  text-shadow: 1px 1px #2a4707;
-  background: linear-gradient(#F65E6F, #F03747);
-  border-color: #a2202a; }
-
-.button--decline:hover, .button--decline:focus {
-  background: linear-gradient(to top, #F65E6F, #F03747); }
-
-/*# sourceMappingURL=button--decline.css.map */
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+src/style.scss:89
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/bin/sass:13:in `<top (required)>'
+C:/Ruby24-x64/bin/sass:22:in `load'
+C:/Ruby24-x64/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: blocks/form/__field-wrapper/--select-arrow/form__field-wrapper--select-arrow.scss.\A        Load path: Sass::Globbing::Importer\A         on line 89 of src/style.scss\A \A 84: /* ###---Form__field-wrapper ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */\A 85:     @import \"blocks/form/__field-wrapper/form__field-wrapper.scss\";\A 86: /* ###---Form__field-wrapper--border ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */\A 87:         @import \"blocks/form/__field-wrapper/--border/form__field-wrapper--border.scss\";\A 88: /* ###---Form__field-wrapper--select-arrow ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */\A 89:         @import \"blocks/form/__field-wrapper/--select-arrow/form__field-wrapper--select-arrow.scss\";\A 90:         @import \"blocks/form/__field-wrapper/--inline/form__field-wrapper--inline.scss\";\A 91: \A 92:         @import \"blocks/form/__field-wrapper/__input/field__input.scss\";\A 93:             @import \"blocks/form/__field-wrapper/__input/--select/field__input--select.scss\";\A 94: /*blababla*/"; }
