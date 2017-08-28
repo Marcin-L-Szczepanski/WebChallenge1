@@ -247,10 +247,10 @@ body {
   opacity: 1; }
 
 .form__field-wrapper--checkbox-small .field__input--checkbox {
-  transform: translate(3px, 10px); }
+  transform: translate(3px, 6px); }
 
 .form__field-wrapper--checkbox-small .field__label--checkbox {
-  margin-top: -7px; }
+  margin-top: -12px; }
 
 .field__input--textarea {
   height: 232px;
