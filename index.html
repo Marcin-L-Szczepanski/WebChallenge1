@@ -32,35 +32,35 @@
                         <span class="label__icon label__icon--username"></span>
                         <span class="label__text--visually-hidden">Your Name</span>
                     </label>
-                    <input class="field__input" type="text" name="register-name" id="register-name" placeholder="Your Name" required>
+                    <input class="field__input" type="text" name="register-name" id="register-name" placeholder="Your Name" required aria-required="true">
                   </div>
                   <div title="Password" class="form__field-wrapper form__field-wrapper--border">
                     <label class="field__label" for="register-password">
                         <span class="label__icon label__icon--padlock"></span>
                         <span class="label__text--visually-hidden">Password</span>
                     </label>
-                    <input class="field__input" type="password" name="register-password" id="register-password" placeholder="Password" required>
+                    <input class="field__input" type="password" name="register-password" id="register-password" placeholder="Password" required aria-required="true">
                   </div>
                   <div title="Confirm Password" class="form__field-wrapper form__field-wrapper--border">
                     <label class="field__label" for="register-confirm-password">
                         <span class="label__icon label__icon--padlock"></span>
                         <span class="label__text--visually-hidden">Confirm Password</span>
                     </label>
-                    <input class="field__input" type="password" name="register-confirm-password" id="register-confirm-password" placeholder="Confirm Password" required>
+                    <input class="field__input" type="password" name="register-confirm-password" id="register-confirm-password" placeholder="Confirm Password" required aria-required="true">
                   </div>
                   <div title="Your Email" class="form__field-wrapper form__field-wrapper--border">
                     <label class="field__label" for="register-email">
                         <span class="label__icon label__icon--email"></span>
                         <span class="label__text--visually-hidden">Email</span>
                     </label>
-                    <input class="field__input" type="email" name="register-email" id="register-email" placeholder="Email" required>
+                    <input class="field__input" type="email" name="register-email" id="register-email" placeholder="Email" required aria-required="true">
                   </div>
                   <div title="Location" class="form__field-wrapper form__field-wrapper--border form__field-wrapper--select">
                     <label class="field__label" for="register-location">
                         <span class="label__icon label__icon--location"></span>
                         <span class="label__text--visually-hidden">Location</span>
                     </label>
-                    <select class="field__input field__input--select" name="register-location" id="register-location" required>
+                    <select class="field__input field__input--select" name="register-location" id="register-location" required aria-required="true">
                         <option  value="" disabled selected hidden>Your  Location</option>
                         <option value="africa">Africa</option>
                         <option value="asia">Asia</option>
@@ -71,7 +71,7 @@
                     </select>
                   </div>
                   <div class="form__field-wrapper">
-                    <input class="field__input--checkbox" type="checkbox" required name="register-agree-terms" id="register-agree-terms">
+                    <input class="field__input--checkbox" type="checkbox" name="register-agree-terms" id="register-agree-terms" required aria-required="true">
                     <label class="field__label--checkbox" for="register-agree-terms">
                         <span class="label__checkbox"></span>
                         <span class="label__text">I have read and accept the terms of use</span>
@@ -97,17 +97,17 @@
                         <span class="label__icon label__icon--username"></span>
                         <span class="label__text--visually-hidden">Your Name</span>
                     </label>
-                    <input class="field__input" type="text" name="send-msg-name" id="send-msg-name" placeholder="Your Name" required>
+                    <input class="field__input" type="text" name="send-msg-name" id="send-msg-name" placeholder="Your Name" required aria-required="true">
                   </div>
                   <div title="Your Email" class="form__field-wrapper form__field-wrapper--border">
                     <label class="field__label" for="send-email-address">
                         <span class="label__icon label__icon--email"></span>
                         <span class="label__text--visually-hidden">Your Email</span>
                     </label>
-                    <input class="field__input" type="email" name="send-email-address" id="send-email-address" placeholder="Your Email" required>
+                    <input class="field__input" type="email" name="send-email-address" id="send-email-address" placeholder="Your Email" required aria-required="true">
                   </div>
                   <div title="Type your message"  class="form__field-wrapper form__field-wrapper--border">
-                    <textarea class="field__input field__input--textarea" name="send-msg-content" placeholder="Type your message..." required rows="10" cols="30"></textarea>
+                    <textarea class="field__input field__input--textarea" name="send-msg-content" placeholder="Type your message..." required aria-required="true" rows="10" cols="30"></textarea>
                   </div>
                   <div class="form__field-wrapper">
                     <input class="field__input--checkbox" type="checkbox" name="send-email-copy" id="send-email-copy">
@@ -137,18 +137,18 @@
                         <span class="label__icon label__icon--username"></span>
                         <span class="label__text--visually-hidden">Username</span>
                     </label>
-                    <input class="field__input" type="text" name="sign-in-username" id="sign-in-username" placeholder="Username" required>
+                    <input class="field__input" type="text" name="sign-in-username" id="sign-in-username" placeholder="Username" required aria-required="true">
                   </div>
                   <div title="Password" class="form__field-wrapper form__field-wrapper--border">
                     <label class="field__label" for="sign-in-password">
                         <span class="label__icon label__icon--padlock"></span>
                         <span class="label__text--visually-hidden">Password</span>
                     </label>
-                    <input class="field__input" type="password" name="sign-in-password" id="sign-in-password" placeholder="Password" required>
+                    <input class="field__input" type="password" name="sign-in-password" id="sign-in-password" placeholder="Password" required aria-required="true">
                   </div>
                   <div class="form__field-wrapper form__field-wrapper--inline">
                     <div class="form__field-wrapper--checkbox-small">
-                      <input class="field__input--checkbox" type="checkbox" required name="sign-in-remember" id="sign-in-remember">
+                      <input class="field__input--checkbox" type="checkbox" name="sign-in-remember" id="sign-in-remember" required aria-required="true">
                       <label class="field__label--checkbox field__label--small" for="sign-in-remember">
                         <span class="label__checkbox"></span>
                         <span class="label__text">Remember me</span>
@@ -173,7 +173,7 @@
                         <span class="label__icon label__icon--email"></span>
                         <span class="label__text--visually-hidden">Enter your Email</span>
                     </label>
-                    <input class="field__input" type="email" name="recover-email" id="recover-email" placeholder="Enter your Email" required>
+                    <input class="field__input" type="email" name="recover-email" id="recover-email" placeholder="Enter your Email" required aria-required="true">
                   </div>
                   <div title="Enter your Phone Number" class="form__field-wrapper form__field-wrapper--border">
                     <label class="field__label" for="recover-phone">
@@ -203,7 +203,7 @@
                         <span class="label__icon label__icon--email"></span>
                         <span class="label__text--visually-hidden">Enter your Email</span>
                     </label>
-                    <input class="field__input" type="text" name="subscribe-email" id="subscribe-email" placeholder="Enter your Email" required>
+                    <input class="field__input" type="text" name="subscribe-email" id="subscribe-email" placeholder="Enter your Email" required aria-required="true">
                   </div>
                   <div class="form__field-wrapper form__field-wrapper--inline">
                     <input class="form__button button button--small" type="submit" value="Subscribe">
