@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+
+/*--- Normalize.css ----------------------------------------------------------------- */
+@import "../static/normalize.css";
+
+
 body {
     font-family: 'Titillium Web', sans-serif;
     background-image: url('../img/background.png');
@@ -54,9 +59,6 @@ body {
 }
 }
 
-/*--- Normalize.css ----------------------------------------------------------------- */
-@import "../static/normalize.css";
-
 
 /* ### >>> Banner BLOCK <<< ######################################################### */
 @import "blocks/banner/banner.scss";
@@ -64,6 +66,10 @@ body {
     @import "blocks/banner/--bottom/banner--bottom.scss";
 /* *** >>> Banner__logo <<< ****************************************************** */
     @import "blocks/banner/__logo/banner__logo.scss";
+/* *** >>> Banner__header <<< ****************************************************** */
+    @import "blocks/banner/__header/banner__header.scss";
+/* *** >>> Banner__name <<< ****************************************************** */
+    @import "blocks/banner/__name/banner__name.scss";
 /* *** >>> Banner__url <<< ****************************************************** */
     @import "blocks/banner/__url/banner__url.scss";
 
