@@ -1,6 +1,9 @@
-.form__field-wrapper--checkbox-small {
+    .form__field-wrapper--checkbox-small {
+      width: 90%;
+  display: flex;
+  margin-top: 0;
+  padding: 1px;
+  position: relative;
   width: 151px;
   height: 44px;
-  margin-top: 0;
-  margin-bottom: 25px;
 }

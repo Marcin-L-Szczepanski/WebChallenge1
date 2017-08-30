@@ -1,0 +1,28 @@
+.label__checkbox {
+    width: 26px;
+    height: 26px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    position: relative;
+    display: inline-block;
+}
+
+.label__checkbox:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    background: linear-gradient(to top, #7EC31F, #A4D842);
+    background-color: #93D02B;
+    box-shadow: inset 2px 1px 1px 0px rgba(255, 255, 255, .4);
+    opacity: 0;
+    top: 4px;
+    left: 4px;
+    position: absolute;
+    transition: opacity 300ms ease-out;
+}
+
+.field__input--checkbox:checked + .field__label--checkbox > .label__checkbox:before  {
+    opacity: 1;
+}

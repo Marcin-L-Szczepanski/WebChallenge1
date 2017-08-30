@@ -1,91 +1,144 @@
-*, *::after, *::before {
-    box-sizing: border-box;
-}
+/*
+-------------------------------------------------------------------------
+* CONTENTS                                                              |
+*                                                                       |
+* #1 SETTINGS ****                                                      |
+*   --- Global ---                                                      |
+*   --- Normalize.css ---                                               |
+*                                                                       |
+* #2 LAYOUT                                                             |
+*                                                                       |
+* #3 BLOCKS                                                             |
+*   --- Banner Block                                                    |
+*      __ Banner Elements                                               |
+*      >> Banner Modifiers                                              |
+*   --- Form Block                                                      |
+*      __ Form Elements                                                 |
+*         __>> Form Elements Modifiers                                  |
+*         __ __ Form Subelements                                        |
+*         __ __>> Form Subelements Modifiers                            |
+*   --- Button Block                                                    |
+*      >> Button Modifiers                                              |
+-------------------------------------------------------------------------
 
 
-/*--- Normalize.css ----------------------------------------------------------------- */
-@import "../static/normalize.css";
-
-
-body {
-    font-family: 'Titillium Web', sans-serif;
-    background-image: url('../img/background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-}
-
-/* 
-###### LAYOUT #########################################################
-######*/@import "layout/layout.scss"; /*###############################
-#######################################################################
-*/
-
-/* ### >>> Banner BLOCK <<< ######################################################### */
+/************************************************************************\
+  1# SETTINGS start ######################################################
+\************************************************************************/
+/************************************************************************\
+  # SETTINGS --- Global start --------------------------------------------
+\************************************************************************/
+@import "global/global.scss"; 
+/************************************************************************\
+  # SETTINGS --- Global end ----------------------------------------------
+\************************************************************************/
+/************************************************************************\
+  # SETTINGS --- Normalize.css start -------------------------------------
+\************************************************************************/
+@import "../static/normalize.scss"; 
+/************************************************************************\
+  # SETTINGS --- Normalize.css end ---------------------------------------
+\************************************************************************/
+/*\
+***
+\*/
+/************************************************************************\
+  2# LAYOUT start ########################################################
+\************************************************************************/
+@import "layout/layout.scss"; /*
+/************************************************************************\
+  # LAYOUT end ###########################################################
+\************************************************************************/
+/*\
+***
+\*/
+/************************************************************************\
+  3# BLOCKS start #########################################################
+\************************************************************************/
+/************************************************************************\
+  # BLOCK --- Banner start -----------------------------------------------
+\************************************************************************/
 @import "blocks/banner/banner.scss";
-/* ^^^ >>> Banner--bottom <<< ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-    @import "blocks/banner/--bottom/banner--bottom.scss";
-/* *** >>> Banner__logo <<< ****************************************************** */
+/* __ Banner__logo ---------------------------------------------------- */
     @import "blocks/banner/__logo/banner__logo.scss";
-/* *** >>> Banner__header <<< ****************************************************** */
-    @import "blocks/banner/__header/banner__header.scss";
-/* *** >>> Banner__name <<< ****************************************************** */
+/* __ Banner__header -------------------------------------------------- */
+    @import "blocks/banner/__heading/banner__heading.scss";
+/* __ Banner__name ---------------------------------------------------- */
     @import "blocks/banner/__name/banner__name.scss";
-/* *** >>> Banner__url <<< ****************************************************** */
+/* __ Banner__url ----------------------------------------------------- */
     @import "blocks/banner/__url/banner__url.scss";
-
-
-
-/* ###---Form---BLOCK---############################################################# */
+/* >> Banner--bottom -------------------------------------------------- */
+    @import "blocks/banner/--bottom/banner--bottom.scss";
+/************************************************************************\
+  # BLOCK --- Banner end -------------------------------------------------
+\************************************************************************/
+/*\
+***
+\*/
+/************************************************************************\
+  # BLOCK --- Form start ----------------------------------------------
+\************************************************************************/
 @import "blocks/form/form.scss";
-/* ###---Form---ELEMENTS---########################################################### */
-/* ###---Form__container ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-    @import "blocks/form/__container/form__container.scss";
-/* ###---Form__header ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* __ Form__header ---------------------------------------------------- */
     @import "blocks/form/__header/form__header.scss";
-/* ###---Form__background ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* __ Form__container ------------------------------------------------- */
+    @import "blocks/form/__container/form__container.scss";
+/* __ Form__background ------------------------------------------------ */
     @import "blocks/form/__background/form__background.scss";
-/* ###---Form__body ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* __ Form__body  ----------------------------------------------------- */
     @import "blocks/form/__body/form__body.scss";
-
-/* ###---Form__field-wrapper ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* __ Form__field-wrapper --------------------------------------------- */
     @import "blocks/form/__field-wrapper/form__field-wrapper.scss";
-/* ###---Form__field-wrapper--border ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* __>> Form__field-wrapper--border ----------------------------------- */
         @import "blocks/form/__field-wrapper/--border/form__field-wrapper--border.scss";
-/* ###---Form__field-wrapper--select-arrow ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* __>> Form__field-wrapper--select ----------------------------------- */
         @import "blocks/form/__field-wrapper/--select/form__field-wrapper--select.scss";
+/* __>> Form__field-wrapper--inline ----------------------------------- */
         @import "blocks/form/__field-wrapper/--inline/form__field-wrapper--inline.scss";
-
+/* __>> Form__field-wrapper--checkbox-small --------------------------- */
+        @import "blocks/form/__field-wrapper/--checkbox-small/form__field-wrapper--checkbox-small.scss";
+/* __ __ Field__input ------------------------------------------------- */
         @import "blocks/form/__field-wrapper/__input/field__input.scss";
+/* __ __>> Field__input--select ---------------------------------------- */
             @import "blocks/form/__field-wrapper/__input/--select/field__input--select.scss";
-/*blababla*/
+/* __ __>> Field__input--checkbox -------------------------------------- */
             @import "blocks/form/__field-wrapper/__input/--checkbox/field__input--checkbox.scss";
+/* __ __>> Field__input--textarea -------------------------------------- */
             @import "blocks/form/__field-wrapper/__input/--textarea/field__input--textarea.scss";
+/* __ __>> Field__input--number ---------------------------------------- */
             @import "blocks/form/__field-wrapper/__input/--number/field__input--number.scss";
-
+/* __ __ Field__label -------------------------------------------------- */
         @import "blocks/form/__field-wrapper/__label/field__label.scss";
-            @import "blocks/form/__field-wrapper/__label/--checkbox/field__label--checkbox.scss";
-            @import "blocks/form/__field-wrapper/__label/--small/field__label--small.scss";
-            
-            @import "blocks/form/__field-wrapper/__label/__text/label__text.scss";
-                @import "blocks/form/__field-wrapper/__label/__text/--visually-hidden/label__text--visually-hidden.scss";
+/* __ __ __ Label__icon ------------------------------------------------ */
             @import "blocks/form/__field-wrapper/__label/__icon/label__icon.scss";
-            @import "blocks/form/__field-wrapper/__label/__icon/*/*";
+/* __ __ __>> Label__icon - Modifiers ---------------------------------- */
+                @import "blocks/form/__field-wrapper/__label/__icon/*/*";
+/* __ __ __ Label__text ------------------------------------------------ */
+            @import "blocks/form/__field-wrapper/__label/__text/label__text.scss";
+/* __ __ __>> Label__text--visually-hidden ----------------------------- */
+                @import "blocks/form/__field-wrapper/__label/__text/--visually-hidden/label__text--visually-hidden.scss";
+/* __ __ __ Label__checkbox -------------------------------------------- */
             @import "blocks/form/__field-wrapper/__label/__checkbox/label__checkbox.scss";
-
-
+/* __ __>> Field__label--checkbox -------------------------------------- */
+            @import "blocks/form/__field-wrapper/__label/--checkbox/field__label--checkbox.scss";
+/* __ Form__header ----------------------------------------------------- */
     @import "blocks/form/__button/form__button.scss";
-/* ------------------------ Form Elements Modifiers--------------------- */
-
-    
-
-
-/* ------------------------ Button Block ------------------------ */
+/************************************************************************\
+  # BLOCK --- Form end ---------------------------------------------------
+\************************************************************************/
+/*\
+***
+\*/
+/************************************************************************\
+  # BLOCK --- Button start ----------------------------------------------
+\************************************************************************/
 @import "blocks/button/button.scss";
-    /* ---------------------- Button Modifiers ---------------------- */
+/* >> Button--small --------------------------------------------------- */
     @import "blocks/button/--small/button--small.scss";
+/* >> Button--disabled ------------------------------------------------ */
     @import "blocks/button/--disabled/button--disabled.scss";
+/* >> Button--decline ------------------------------------------------- */
     @import "blocks/button/--decline/button--decline.scss";
-
+/************************************************************************\
+  # BLOCK --- Button end ----------------------------------------------
+\************************************************************************/
