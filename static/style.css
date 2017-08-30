@@ -460,16 +460,49 @@ template {
   position: relative;
   width: 100%;
   margin: 0 auto 0 auto;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
   justify-content: space-around;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
   align-items: flex-start; }
 
 .l-column {
   width: 100%;
-  display: flex;
   position: relative;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center; }
 
 @media all and (min-width: 950px) {
@@ -610,15 +643,39 @@ template {
   border: none;
   background-color: #f4f4f4;
   border-radius: 5px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
   align-items: center;
   box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.13); }
 
 /* __ Form__field-wrapper --------------------------------------------- */
 .form__field-wrapper {
   width: 90%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
   margin-top: 20px;
   padding: 1px; }
 
@@ -652,7 +709,16 @@ template {
 /* __>> Form__field-wrapper--checkbox-small --------------------------- */
 .form__field-wrapper--checkbox-small {
   width: 90%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
   margin-top: 0;
   padding: 1px;
   position: relative;
@@ -842,7 +908,19 @@ template {
 .field__label--checkbox {
   cursor: pointer;
   margin-left: -13px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
   align-items: center; }
 
 /* __ Form__header ----------------------------------------------------- */

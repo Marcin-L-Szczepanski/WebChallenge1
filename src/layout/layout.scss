@@ -13,18 +13,41 @@
     position: relative;
     width: 100%;
     margin: 0 auto 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-flex-direction: column;
+       -moz-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+       -moz-justify-content: space-around;
+        -ms-justify-content: space-around;
+            justify-content: space-around;
+    -webkit-align-items: flex-start;
+       -moz-align-items: flex-start;
+        -ms-align-items: flex-start;
+            align-items: flex-start;
 }
 
 .l-column {
     width: 100%;
-    display: flex;
     position: relative;
-    flex-direction: column;
-    justify-content: center;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-flex-direction: column;
+       -moz-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+       -moz-justify-content: center;
+        -ms-justify-content: center;
+            justify-content: center;
 }
 
 @media all and (min-width: 950px) {
