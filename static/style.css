@@ -702,8 +702,7 @@ template {
   background: url("../img/icons/arrow.png"), -o-linear-gradient(#F6F6F6, #F0F0F0);
   background: url("../img/icons/arrow.png"), linear-gradient(#F6F6F6, #F0F0F0);
   background-repeat: no-repeat;
-  background-position: center right 15px;
-  cursor: pointer; }
+  background-position: center right 15px; }
 
 .form__field-wrapper--select:hover {
   background: url("../img/icons/arrow.png"), -webkit-gradient(linear, left bottom, left top, from(#F6F6F6), to(#F0F0F0));
@@ -764,7 +763,14 @@ template {
 .field__input--select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; }
+  appearance: none;
+  cursor: pointer;
+  background: url("../img/icons/arrow.png"), -webkit-gradient(linear, left top, left bottom, from(#F6F6F6), to(#F0F0F0));
+  background: url("../img/icons/arrow.png"), -webkit-linear-gradient(#F6F6F6, #F0F0F0);
+  background: url("../img/icons/arrow.png"), -o-linear-gradient(#F6F6F6, #F0F0F0);
+  background: url("../img/icons/arrow.png"), linear-gradient(#F6F6F6, #F0F0F0);
+  background-repeat: no-repeat;
+  background-position: center right 15px; }
 
 /* __ __>> Field__input--checkbox -------------------------------------- */
 .field__input--checkbox {
