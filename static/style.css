@@ -694,7 +694,7 @@ template {
   overflow: hidden;
   width: auto;
   white-space: inherit;
-  transform: translate(2px, 2px);
+  transform: translate(2.5px, 2px);
   opacity: 0; }
 
 .field__input--checkbox:focus {
@@ -712,11 +712,11 @@ template {
   white-space: inherit;
   box-shadow: 4px 5px 4px 9px rgba(126, 195, 31, 0.5);
   background-color: red;
-  transform: translate(2px, 2px);
+  transform: translate(2.5px, 2px);
   opacity: 1; }
 
 .form__field-wrapper--checkbox-small .field__input--checkbox {
-  transform: translate(3px, 10px); }
+  transform: translate(2px, 10px); }
 
 /* __ __>> Field__input--textarea -------------------------------------- */
 .field__input--textarea {
