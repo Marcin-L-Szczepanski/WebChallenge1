@@ -1,9 +1,15 @@
 .button--disabled {
     background-color: #BCDB97;
+    background: -webkit-gradient(linear, left top, left bottom, from(#C9E2AA), to(#ABD182));
+    background: -webkit-linear-gradient(#C9E2AA, #ABD182);
+    background: -o-linear-gradient(#C9E2AA, #ABD182);
     background: linear-gradient(#C9E2AA, #ABD182);
     border-color: #90ca6d;
 }
     .button--disabled:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#C9E2AA), to(#ABD182));
+        background: -webkit-linear-gradient(#C9E2AA, #ABD182);
+        background: -o-linear-gradient(#C9E2AA, #ABD182);
         background: linear-gradient(#C9E2AA, #ABD182);
         cursor: not-allowed;
     }

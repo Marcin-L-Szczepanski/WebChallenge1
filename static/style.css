@@ -514,6 +514,7 @@ template {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
+    -webkit-box-shadow: 0px 0px 100px;
     box-shadow: 0px 0px 100px; } }
                               /*
 /************************************************************************\
@@ -683,28 +684,44 @@ template {
 .form__field-wrapper--border {
   border: 1px solid #c6c6c6;
   border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F6F6F6), to(#F0F0F0));
+  background: -webkit-linear-gradient(#F6F6F6, #F0F0F0);
+  background: -o-linear-gradient(#F6F6F6, #F0F0F0);
   background: linear-gradient(#F6F6F6, #F0F0F0); }
 
 .form__field-wrapper--border:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#F6F6F6), to(#F0F0F0));
+  background: -webkit-linear-gradient(bottom, #F6F6F6, #F0F0F0);
+  background: -o-linear-gradient(bottom, #F6F6F6, #F0F0F0);
   background: linear-gradient(to top, #F6F6F6, #F0F0F0); }
 
 /* __>> Form__field-wrapper--select ----------------------------------- */
 .form__field-wrapper--select {
+  background: url("../img/icons/arrow.png"), -webkit-gradient(linear, left top, left bottom, from(#F6F6F6), to(#F0F0F0));
+  background: url("../img/icons/arrow.png"), -webkit-linear-gradient(#F6F6F6, #F0F0F0);
+  background: url("../img/icons/arrow.png"), -o-linear-gradient(#F6F6F6, #F0F0F0);
   background: url("../img/icons/arrow.png"), linear-gradient(#F6F6F6, #F0F0F0);
   background-repeat: no-repeat;
   background-position: center right 15px;
   cursor: pointer; }
 
 .form__field-wrapper--select:hover {
+  background: url("../img/icons/arrow.png"), -webkit-gradient(linear, left bottom, left top, from(#F6F6F6), to(#F0F0F0));
+  background: url("../img/icons/arrow.png"), -webkit-linear-gradient(bottom, #F6F6F6, #F0F0F0);
+  background: url("../img/icons/arrow.png"), -o-linear-gradient(bottom, #F6F6F6, #F0F0F0);
   background: url("../img/icons/arrow.png"), linear-gradient(to top, #F6F6F6, #F0F0F0);
   background-repeat: no-repeat;
   background-position: center right 15px; }
 
 /* __>> Form__field-wrapper--inline ----------------------------------- */
 .form__field-wrapper--inline {
-  border: none;
-  justify-content: space-between;
-  background: #f4f4f4; }
+  background: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 /* __>> Form__field-wrapper--checkbox-small --------------------------- */
 .form__field-wrapper--checkbox-small {
@@ -736,7 +753,11 @@ template {
   margin-left: -58px; }
 
 .field__input:focus {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f2f2f2), to(#eaeaea));
+  background: -webkit-linear-gradient(bottom, #f2f2f2, #eaeaea);
+  background: -o-linear-gradient(bottom, #f2f2f2, #eaeaea);
   background: linear-gradient(to top, #f2f2f2, #eaeaea);
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(126, 195, 31, 0.5);
   box-shadow: 0px 0px 3px 3px rgba(126, 195, 31, 0.5); }
 
 /* __ __>> Field__input--select ---------------------------------------- */
@@ -760,6 +781,8 @@ template {
   overflow: hidden;
   width: auto;
   white-space: inherit;
+  -webkit-transform: translate(2.5px, 2px);
+  -ms-transform: translate(2.5px, 2px);
   transform: translate(2.5px, 2px);
   opacity: 0; }
 
@@ -776,12 +799,16 @@ template {
   position: static;
   width: auto;
   white-space: inherit;
+  -webkit-box-shadow: 4px 5px 4px 9px rgba(126, 195, 31, 0.5);
   box-shadow: 4px 5px 4px 9px rgba(126, 195, 31, 0.5);
-  background-color: red;
+  -webkit-transform: translate(2.5px, 2px);
+  -ms-transform: translate(2.5px, 2px);
   transform: translate(2.5px, 2px);
   opacity: 1; }
 
 .form__field-wrapper--checkbox-small .field__input--checkbox {
+  -webkit-transform: translate(2px, 10px);
+  -ms-transform: translate(2px, 10px);
   transform: translate(2px, 10px); }
 
 /* __ __>> Field__input--textarea -------------------------------------- */
@@ -892,13 +919,19 @@ template {
   width: 16px;
   height: 16px;
   border-radius: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#7EC31F), to(#A4D842));
+  background: -webkit-linear-gradient(bottom, #7EC31F, #A4D842);
+  background: -o-linear-gradient(bottom, #7EC31F, #A4D842);
   background: linear-gradient(to top, #7EC31F, #A4D842);
   background-color: #93D02B;
+  -webkit-box-shadow: inset 2px 1px 1px 0px rgba(255, 255, 255, 0.4);
   box-shadow: inset 2px 1px 1px 0px rgba(255, 255, 255, 0.4);
   opacity: 0;
   top: 4px;
   left: 4px;
   position: absolute;
+  -webkit-transition: opacity 300ms ease-out;
+  -o-transition: opacity 300ms ease-out;
   transition: opacity 300ms ease-out; }
 
 .field__input--checkbox:checked + .field__label--checkbox > .label__checkbox:before {
@@ -937,6 +970,9 @@ template {
   # BLOCK --- Button start ----------------------------------------------
 \************************************************************************/
 .button {
+  background: -webkit-gradient(linear, left bottom, left top, from(#7EC31F), to(#A4D842));
+  background: -webkit-linear-gradient(bottom, #7EC31F, #A4D842);
+  background: -o-linear-gradient(bottom, #7EC31F, #A4D842);
   background: linear-gradient(to top, #7EC31F, #A4D842);
   background-color: #93D02B;
   color: #ffffff;
@@ -947,10 +983,14 @@ template {
   border-radius: 3px;
   border: 1px solid #3a9a00;
   text-shadow: 1px 1px #51850e;
+  -webkit-box-shadow: inset 2px 1px 1px 0px rgba(255, 255, 255, 0.4);
   box-shadow: inset 2px 1px 1px 0px rgba(255, 255, 255, 0.4);
   cursor: pointer; }
 
 .button:hover, .button:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7EC31F), to(#A4D842));
+  background: -webkit-linear-gradient(#7EC31F, #A4D842);
+  background: -o-linear-gradient(#7EC31F, #A4D842);
   background: linear-gradient(#7EC31F, #A4D842); }
 
 .button:active {
@@ -968,10 +1008,16 @@ template {
 /* >> Button--disabled ------------------------------------------------ */
 .button--disabled {
   background-color: #BCDB97;
+  background: -webkit-gradient(linear, left top, left bottom, from(#C9E2AA), to(#ABD182));
+  background: -webkit-linear-gradient(#C9E2AA, #ABD182);
+  background: -o-linear-gradient(#C9E2AA, #ABD182);
   background: linear-gradient(#C9E2AA, #ABD182);
   border-color: #90ca6d; }
 
 .button--disabled:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C9E2AA), to(#ABD182));
+  background: -webkit-linear-gradient(#C9E2AA, #ABD182);
+  background: -o-linear-gradient(#C9E2AA, #ABD182);
   background: linear-gradient(#C9E2AA, #ABD182);
   cursor: not-allowed; }
 
@@ -982,10 +1028,16 @@ template {
 .button--decline {
   background-color: #F4495B;
   text-shadow: 1px 1px #2a4707;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F65E6F), to(#F03747));
+  background: -webkit-linear-gradient(#F65E6F, #F03747);
+  background: -o-linear-gradient(#F65E6F, #F03747);
   background: linear-gradient(#F65E6F, #F03747);
   border-color: #a2202a; }
 
 .button--decline:hover, .button--decline:focus {
+  background: -webkit-gradient(linear, left bottom, left top, from(#F65E6F), to(#F03747));
+  background: -webkit-linear-gradient(bottom, #F65E6F, #F03747);
+  background: -o-linear-gradient(bottom, #F65E6F, #F03747);
   background: linear-gradient(to top, #F65E6F, #F03747); }
 
 /*# sourceMappingURL=button--decline.css.map */

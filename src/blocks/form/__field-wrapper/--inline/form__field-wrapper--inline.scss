@@ -1,5 +1,9 @@
 .form__field-wrapper--inline {
-  border: none;
-  justify-content: space-between;
   background: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
