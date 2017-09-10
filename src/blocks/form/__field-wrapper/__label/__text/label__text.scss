@@ -2,3 +2,8 @@
     margin-left: 14px;
     color: #afafaf;
 }
+
+/* Keep text black when tick mark checked */
+.field__input--checkbox:checked + .field__label--checkbox > .label__text {
+  color: #282828;
+}

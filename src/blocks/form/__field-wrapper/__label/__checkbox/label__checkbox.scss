@@ -5,7 +5,6 @@
     border-radius: 5px;
     background-color: #f4f4f4;
     position: relative;
-    display: inline-block;
 }
 
 .label__checkbox:before {
@@ -13,22 +12,38 @@
     width: 16px;
     height: 16px;
     border-radius: 5px;
-    background: -webkit-gradient(linear, left bottom, left top, from(#7EC31F), to(#A4D842));
-    background: -webkit-linear-gradient(bottom, #7EC31F, #A4D842);
-    background: -o-linear-gradient(bottom, #7EC31F, #A4D842);
     background: linear-gradient(to top, #7EC31F, #A4D842);
     background-color: #93D02B;
-    -webkit-box-shadow: inset 2px 1px 1px 0px rgba(255, 255, 255, 0.4);
-          box-shadow: inset 2px 1px 1px 0px rgba(255, 255, 255, 0.4);
+    box-shadow: inset 2px 1px 1px 0px rgba(255, 255, 255, 0.4);
     opacity: 0;
     top: 4px;
     left: 4px;
     position: absolute;
-    -webkit-transition: opacity 300ms ease-out;
-         -o-transition: opacity 300ms ease-out;
-            transition: opacity 300ms ease-out; 
+    transition: opacity 300ms ease-out; 
 }
 
+
+/* Box style when focused */ 
+.field__input--checkbox:focus + .field__label--checkbox > .label__checkbox {
+  box-shadow: 0 0 4px 4px rgba(126, 195, 31, 0.5);
+}
+
+/* Box style when active (clicked) */ 
+.field__input--checkbox:active + .field__label--checkbox > .label__checkbox {
+  box-shadow: 0 0 4px 4px rgba(200, 255, 22, 0.5);
+}
+
+/* Text style when focused */ 
+.field__input--checkbox:focus + .field__label--checkbox > .label__text {
+  color: #000000;
+}
+
+/* Text style when active (clicked) */ 
+.field__input--checkbox:active + .field__label--checkbox > .label__text {
+  color: #afafaf;
+}
+
+/* Show tick mark when checked */
 .field__input--checkbox:checked + .field__label--checkbox > .label__checkbox:before  {
     opacity: 1;
 }
